@@ -10,10 +10,25 @@ Console.Write("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 NaturalNumbers(number);
+ProvNum(number);
 
 void NaturalNumbers(int num)
 {
-    if(num == 0) return;
-    Console.Write($"{num} ");
-    NaturalNumbers(num - 1); 
+    if (num >= 1)
+    {
+        Console.Write($"{num} ");
+        NaturalNumbers(num - 1);
+    }
+}
+void ProvNum(int number)
+{
+    if (number >= 1)
+    {
+        Console.Write("Числa натуральные");
+    }
+    else
+    {
+        Console.Write("Число не натуральное");
+    }
+    Console.WriteLine();
 }
