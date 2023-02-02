@@ -1,4 +1,4 @@
-﻿int n = 5;
+﻿int n = 4;
 int[,] matrix3 = new int[n, n];
 int num = 1;
 int delta = 0;
